@@ -1,3 +1,4 @@
+// setTimeout(()=>{
 // const input = prompt("enter your age");
 // if(input >= 18){
 //     // document.body.innerHTML ="<h1 style='color:black' >you are eligible to drive </h1>";
@@ -11,6 +12,7 @@
 //     document.body.innerHTML ="<h1>you are NOT eligible to drive</h1>";
 //     document.body.style.color="red";
 // }
+// },5000);
 // const a = document.querySelectorAll("h1");
 // console.log(a);
 // for (var i = 0; i < a.length; i++) {
