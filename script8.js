@@ -3653,3 +3653,75 @@
 // document.body.appendChild(img);
 
 
+// const button = document.getElementById("btn");
+// button.onclick=function(){
+//     const h1 = document.createElement("h1");
+//     h1.textContent
+// }
+
+
+// const button = document.getElementById("btn");
+// button.onclick = function(){
+//     console.log("Aditya");
+//     const h1 = document.createElement('h1')
+//     h1.textContent = "Ridhi";
+//     document.body.append(h1);
+// }
+
+// document.body.onmousemove = function(c){
+//     console.log('c.x,c.y');
+// }
+
+
+// Project->
+// document.body.onkeydown = function(event){
+//     const h1=document.createElement('h1');
+//     h1.textContent = event.key
+//     document.body.append(h1);
+
+// };
+
+//     const h1=document.createElement('h1');
+
+// document.body.onkeydown = function(event){
+//     h1.textContent = h1.textContent+event.key
+//     document.body.append(h1);
+
+// 
+// const a = document.getElementsByClassName("h1");
+const a = document.getElementById("ui");
+// console.log(a);
+// a.disabled=true;
+// a.onkeydown = function() {
+//     console.log("aditiya");
+// }
+// a.onfocus = () => {
+//     a.style.border = "2px solid red";
+// }
+// a.onkeydown = (event) => {
+//     console.log(a==event.target);
+//     // document.body.style.backgroundColor = event.target.value;
+//     // console.log(event); 
+// //     document.body.style.backgroundColor = a.value;
+// }
+
+// const btn = document.getElementById("btn");
+// btn.addEventListner('click', () =>{
+//     document.body.style.backgroundColor="red";
+// })
+
+const input = document.getElementById("ui");
+const btn = document.getElementById("btn");
+const ol = document.getElementById("ol");
+
+btn.addEventListener("click", () =>{
+    const li = document.createElement("li");
+    li.style.cursor = "pointer";
+    li.addEventListener("click",() =>{
+        li.style.display="none";
+    });
+
+    li.textContent = input.value ;
+    input.value="";
+    ol.appendChild(li)
+});
