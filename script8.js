@@ -3710,18 +3710,89 @@ const a = document.getElementById("ui");
 //     document.body.style.backgroundColor="red";
 // })
 
-const input = document.getElementById("ui");
-const btn = document.getElementById("btn");
-const ol = document.getElementById("ol");
+// const input = document.getElementById("ui");
+// const btn = document.getElementById("btn");
+// const ol = document.getElementById("ol");
 
-btn.addEventListener("click", () =>{
-    const li = document.createElement("li");
-    li.style.cursor = "pointer";
-    li.addEventListener("click",() =>{
-        li.style.display="none";
-    });
+// btn.addEventListener("click", () =>{
+//     const li = document.createElement("li");
+//     li.style.cursor = "pointer";
+//     li.addEventListener("click",() =>{
+//         li.style.display="none";
+//     });
 
-    li.textContent = input.value ;
-    input.value="";
-    ol.appendChild(li)
+//     li.textContent = input.value ;
+//     input.value="";script8.js
+//     ol.appendChild(li)
+// });
+// script8.js
+// const div = document.getElementById("div");
+// const btn = document.getElementById("btn");
+// div.addEventListener("click",()=>{
+//     const h1 = document.createElement
+// })
+
+// const div = document.getElementById("div");
+// const btn = document.getElementById("btn");
+// div.addEventListener("click", ()=> {
+//     console.log("Div clicked");
+// })
+
+// btn.addEventListener("Click", () => {
+//     console.log("Btn Clicked");
+// })
+
+
+// const parent = document.getElementById("parent");
+// const child = document.getElementById("child");
+
+
+// const input = document.getElementById("input");
+// const button = document.getElementById("button");
+// const ol = document.getElementById("ol");
+// const handler  = () => {
+//     const li = document.createElement("li");
+//     li.textContent= input.value ;
+//     input.value="";
+//     ol.append(li);
+
+// }
+// button.addEventListener("click",handler)
+// const input = document.getElementById("input");
+// const button = document.getElementById("button");
+// const ol = document.getElementById("ol");
+
+// const handler = () => {
+//   const li = document.createElement("li");
+//   li.textContent = input.value;
+//   input.value = "";
+//   ol.append(li);
+// };
+
+// button.addEventListener("click", handler);
+
+// async function networkrequest(){
+//   const data = await fetch('https://dummyjson.com/products');
+//   const originaldata = await data.json();
+//   console.log(originaldata);
+//   return originaldata;
+ 
+
+// }
+// const product = networkrequest();
+
+// fetch('https://dummyjson.com/products')
+// .then()
+
+fetch("https://dummyjson.com/products")
+.then((resolve) => {
+    // console.log("Raghav");
+    return resolve.json();   
+})
+.then((resolve) => {
+    console.log(resolve);
+})
+.catch(() => {
+    console.log("Raghav 2.0");
 });
+

@@ -42,3 +42,6 @@
 // let b = Symbol("rahini");
 // console.log(a==b);
 // console.log(a);
+
+
+let n  ,  k;
