@@ -45,16 +45,16 @@
 
 
 
-function vowelCounter(word){
-    let count = 0 ;
-    for(let ch of word){
-        ch = ch.toLowerCase();
-        if(ch==='a' || ch==='i' || ch==='e' || ch==='o' || ch==='u'){
-            count++;
-        }
-    }
-    return count ;
-}
+// function vowelCounter(word){
+//     let count = 0 ;
+//     for(let ch of word){
+//         ch = ch.toLowerCase();
+//         if(ch==='a' || ch==='i' || ch==='e' || ch==='o' || ch==='u'){
+//             count++;
+//         }
+//     }
+//     return count ;
+// }
 
-const output = vowelCounter("education");
-console.log(output);
+// const output = vowelCounter("education");
+// console.log(output);
