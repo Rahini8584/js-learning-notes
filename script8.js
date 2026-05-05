@@ -3809,15 +3809,15 @@ const a = document.getElementById("ui");
 
 // console.log(choPromise);
 
-const result = "pass";
-const moneyPromise = new Promise((resolve,reject)=>{
-    if(result==="pass"){
-        resolve("money received");
-    }
-    else{
-        reject("noting received");
-    }
-});
+// const result = "pass";
+// const moneyPromise = new Promise((resolve,reject)=>{
+//     if(result==="pass"){
+//         resolve("money received");
+//     }
+//     else{
+//         reject("noting received");
+//     }
+// });
 // console.log(moneyPromise);
 
 
@@ -3828,10 +3828,10 @@ const moneyPromise = new Promise((resolve,reject)=>{
 
 // consume();
 
-moneyPromise
-.then((data)=>{
-    console.log(data);
-})
-.catch((err)=>{
-    console.log(err);
-});
+// moneyPromise
+// .then((data)=>{
+//     console.log(data);
+// })
+// .catch((err)=>{
+//     console.log(err);
+// });
