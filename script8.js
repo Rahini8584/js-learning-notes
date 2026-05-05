@@ -3784,15 +3784,40 @@ const a = document.getElementById("ui");
 // fetch('https://dummyjson.com/products')
 // .then()
 
-fetch("https://dummyjson.com/products")
-.then((resolve) => {
-    // console.log("Raghav");
-    return resolve.json();   
-})
-.then((resolve) => {
-    console.log(resolve);
-})
-.catch(() => {
-    console.log("Raghav 2.0");
-});
+// fetch("https://dummyjson.com/products")
+// .then((resolve) => {
+//     // console.log("Raghav");
+//     return resolve.json();   
+// })
+// .then((resolve) => {
+//     console.log(resolve);
+// })
+// .catch(() => {
+//     console.log("Raghav 2.0");
+// });
+
+
+// const lect = "19-34";
+// const  choPromise = new Promise( (resolve,reject) => {
+//     if(lect==="19-34"){
+//         resolve("Promise fulfilled your st2 syllabus is not updated");
+//     }
+//     else{
+//         reject("promise rejected your st2 syllabus updated ");
+//     }
+// });
+
+// console.log(choPromise);
+
+// const result = "pass";
+// const moneyPromise = new Promise((resolve,reject)=>{
+//     if(result==="pass"){
+//         resolve("money received");
+//     }
+//     else{
+//         reject("noting received");
+//     }
+// });
+// console.log(moneyPromise);
+
 
