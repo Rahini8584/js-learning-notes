@@ -3835,3 +3835,19 @@ const a = document.getElementById("ui");
 // .catch((err)=>{
 //     console.log(err);
 // });
+
+const btn = document.getElementById("btn");
+btn.addEventListener("click",()=>{
+    console.log("clicked");
+});
+setTimeout(()=>{
+    console.log("timeout");
+
+},0);
+async function fetchdata(){
+    console.log(await fetch("https://dummyjson.com/products"));
+}
+fetchdata();
+for(var i = 0 ; i<=10000;i++){
+    console.log("hello world !");
+}
