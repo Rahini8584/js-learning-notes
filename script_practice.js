@@ -58,3 +58,23 @@
 
 // const output = vowelCounter("education");
 // console.log(output);
+
+
+// Q3. Fibonacci Population Model
+// Scenario: A biology simulation predicts growth using Fibonacci. This system processes large
+// datasets and must handle edge cases efficiently 
+
+
+// function fibonacci(num){
+//     if(num<=0) return 0;
+//     if(num ===1) return 1;
+//     let a = 0 , b= 1 ;
+//     for(let i = 2 ; i<= num;i++){
+//         let next = a+b;
+//         a=b;
+//         b=next;
+//     }
+//     return b;
+// }
+//  const output = fibonacci(7);
+//  console.log(output);
