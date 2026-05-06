@@ -78,3 +78,33 @@
 // }
 //  const output = fibonacci(7);
 //  console.log(output);
+
+// prime number check code 
+
+// Check if a number is prime
+function isPrime(n) {
+    if (n <= 1) return false;
+    if (n === 2) return true;
+    if (n % 2 === 0) return false;
+
+    for (let i = 3; i * i <= n; i += 2) {
+        if (n % i === 0) return false;
+    }
+    return true;
+}
+
+// Generate a prime key starting from or above `start`
+function primeEncryptionKey(start) {
+    if (start <= 2) return 2;
+
+    let num = start % 2 === 0 ? start + 1 : start;
+
+    while (!isPrime(num)) {
+        num += 2; // skip even numbers
+    }
+    return num;
+}
+
+// Example: generate a prime encryption key starting from 100
+const key = primeEncryptionKey(100);
+console.log("Prime encryption key:", key); // For 100 → 101
