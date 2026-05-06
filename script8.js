@@ -3852,6 +3852,27 @@ const a = document.getElementById("ui");
 //     console.log("hello world !");
 
 
+// try
+// {
+//     console.log(a);
+// }
+// catch{
+//     console.log("a is not def");
+// }
+// finally{
+//     console.log("hello");
+// }
 
 
-
+try{
+    rahini()
+}
+catch(err){
+    console.log(err);
+}
+finally{
+    function rahini(){
+        console.log("hello");
+    }
+    rahini();
+}
