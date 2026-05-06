@@ -3689,7 +3689,7 @@
 
 // 
 // const a = document.getElementsByClassName("h1");
-const a = document.getElementById("ui");
+// const a = document.getElementById("ui");
 // console.log(a);
 // a.disabled=true;
 // a.onkeydown = function() {
@@ -3864,15 +3864,36 @@ const a = document.getElementById("ui");
 // }
 
 
-try{
-    rahini()
-}
-catch(err){
-    console.log(err);
-}
-finally{
-    function rahini(){
-        console.log("hello");
-    }
-    rahini();
-}
+// try{
+//     rahini()
+// }
+// catch(err){
+//     console.log(err);
+// }
+// finally{
+//     function rahini(){
+//         console.log("hello");
+//     }
+//     rahini();
+// }
+
+
+// try{
+//     console.log(a);
+// }
+// catch{
+//     console.log("Hamare paas a jaisi cheej nhi hai");
+// }
+// finally{
+//     console.log("Hello");
+// }
+
+// a=900
+// try{
+//     if(a<1000){
+//         throw new Error("a ki value 1000 se jyada daal ");
+//     }
+// }
+// catch(err){
+//     console.error(err);
+// }
