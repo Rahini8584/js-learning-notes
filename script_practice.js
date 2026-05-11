@@ -81,30 +81,99 @@
 
 // prime number check code 
 
-// Check if a number is prime
-function isPrime(n) {
-    if (n <= 1) return false;
-    if (n === 2) return true;
-    if (n % 2 === 0) return false;
+// // Check if a number is prime
+// function isPrime(n) {
+//     if (n <= 1) return false;
+//     if (n === 2) return true;
+//     if (n % 2 === 0) return false;
 
-    for (let i = 3; i * i <= n; i += 2) {
-        if (n % i === 0) return false;
-    }
-    return true;
-}
+//     for (let i = 3; i * i <= n; i += 2) {
+//         if (n % i === 0) return false;
+//     }
+//     return true;
+// }
 
-// Generate a prime key starting from or above `start`
-function primeEncryptionKey(start) {
-    if (start <= 2) return 2;
+// // Generate a prime key starting from or above `start`
+// function primeEncryptionKey(start) {
+//     if (start <= 2) return 2;
 
-    let num = start % 2 === 0 ? start + 1 : start;
+//     let num = start % 2 === 0 ? start + 1 : start;
 
-    while (!isPrime(num)) {
-        num += 2; // skip even numbers
-    }
-    return num;
-}
+//     while (!isPrime(num)) {
+//         num += 2; // skip even numbers
+//     }
+//     return num;
+// }
 
-// Example: generate a prime encryption key starting from 100
-const key = primeEncryptionKey(100);
-console.log("Prime encryption key:", key); // For 100 → 101
+// // Example: generate a prime encryption key starting from 100
+// const key = primeEncryptionKey(100);
+// console.log("Prime encryption key:", key); // For 100 → 101  
+
+
+// // type casting in js 
+// let num = 123332;
+// let str = num.toString();
+// console.log(typeof str);
+
+
+// Q10. Palindrome AI Message Filter
+// Scenario: An AI chatbot filters symmetric messages to detect bot patterns. This system processes
+// large datasets and must handle edge cases efficiently.
+// Rules:
+// Ignore case and spaces Use loops only.
+// Task: Check if string is palindrome
+// Sample Input: 'Madam'
+// Sample Output: true
+// Explanation: Same forward/backward
+
+// function palindrome(str){
+//     str = str.toLowerCase();
+//     let cpy = str ;
+//     for(let i = 0 ; i<str.length;i++){
+//         for(let j = str.length -1 ; j>0 ; j--){
+//             if(cpy[i]==str[j]);
+//         }
+//     }
+// }
+
+
+// function sum(...nums){
+//    console.log(nums);
+// }
+
+// sum(1,2,3,4,5);
+
+
+// const student = {
+//   name: "Rahini",
+//   class: 7,
+//   city: "Patiala"
+// };
+
+// for (let key in student) {
+//   console.log(key, "=>", student.key);
+// }
+
+// 1. Creating the Promise
+// let myPromise = new Promise((resolve, reject) => {
+//     let success = false; // Simulating an operation (change to true to test resolve)
+
+//     if (success) {
+//         resolve("Operation Successful!");
+//     } else {
+//         reject("Operation Failed.");
+//     }
+// });
+
+// // 2. Consuming the Promise
+// myPromise
+//     .then((result) => {
+//         console.log(result); // Handles Success (Resolve)
+//     })
+//     .catch((error) => {
+//         console.log(error); // Handles Error (Reject)
+//     })
+//     .finally(() => {
+//         console.log("Operation Completed."); // Runs no matter what
+//     });
+
