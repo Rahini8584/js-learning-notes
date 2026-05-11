@@ -177,3 +177,54 @@
 //         console.log("Operation Completed."); // Runs no matter what
 //     });
 
+
+// const arr = [ 1,2,3,4,5];
+// for(let i = 0 ; i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+// arr.forEach((num)=>{
+//     console.log(num*2)
+// });
+
+// const fruits = ["apple", "banana", "mango"];
+
+// fruits.forEach((fruit, i) => {
+//   console.log(i, fruit);
+// });
+// for each uses a function in it 
+// .length exist without bracket 
+
+
+// console.log(Math.floor(8.3));
+
+// const user = { name: "Rahini", age: 20 };
+
+// for (const [key] of Object.entries(user)) {
+//   console.log(key);
+// }
+
+
+let a = [ 4,8,1];
+console.log(a);
+a.push(5);
+console.log(a);
+let b = a.pop();
+console.log(a);
+console.log(b);
+a.unshift(4);
+console.log(a);
+let c = a.shift();
+console.log(a);
+console.log(c);
+let d = a.sort((a,b)=> b-a);
+console.log(d);
+let e = a.map((x)=>x+1);
+console.log(e)
+let f  = a.filter((x)=>x>2);
+console.log(f);
+a.push(6);
+a.push(3);
+console.log(a);
+console.log(a.length);
+let g = a.reduce((acc, n)=>acc+n,0);
+console.log(g);
